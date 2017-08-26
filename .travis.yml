@@ -12,4 +12,5 @@ script:
 - python3 django-basic/manage.py test
 deploy:
   provider: heroku
+  api_key: ...
   app: gcs01-vinicinolivera-travis
