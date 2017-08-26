@@ -10,3 +10,6 @@ before_script:
 - python3 django-basic/manage.py migrate
 script:
 - python3 django-basic/manage.py test
+deploy:
+  provider: heroku
+  app: gcs01-vinicinolivera-travis
