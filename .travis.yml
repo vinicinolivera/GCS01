@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 env:
 - DJANGO_VERSION=1.11.4
 install:
@@ -11,7 +11,6 @@ before_script:
 script:
 - python3 django-basic/manage.py test
 deploy:
-  provider: heroku
   api_key:
-    secure: b0c94c20-4378-403c-9e67-d3ac2ce41a11
-  app: gcs01-vinicinolivera-travis
+    secure: H8UWXvf+mgCbb9MqPAmpfFtKBgS2Ci6stovxd1ZysKvkPGkHyUYYRn9IBzGVqwCprV+z0eVm46vDrTOfLC8iM2Q3cdEhMoCNR8rZREmQ2s69M60Kq9JamgY5FaSvjCI/voBG2SQXuHPT/025yCqY/CVnu0KPkqk+mNhYjRx5MQLf47UDeLrkoI0aqBgbcqVzqo/YxKdv0V0qB7BfKtwwb0OBf0ORWLNhkLW47uMx8/OXl8+7q5/q4/nYVPql3m9obY6pxbq3N2a/k0SNWPUhKya+MnnyF8F7BTq6dafl4R/3sbwL+T2uY9R3dysFZ+MFGRTsvVB7XB3db9oVvsftRzpqRdaMTzQmenjUygfe2qboCirmNcyvzIsLIgdRrkeyMX9trDowrcacMW1YDn2FIctkmQHLkuT2TM6DCB1BMv7lngKRIZjAz0TUaut36K2Hp/3QDLN1vY/fUPc4hTNLbW0ga0aC1gNPyxjbHxd3UIksPf0WJ2ncNhujhsbjCDateVR9aTmVBvJF2BLBpJ7xE2ynAevASInLiH2oMH+xz8FBi2jEcFqaFo5zkow6qPP+L/e0GfoshaPLeYRz5KoP4x9Pgl34QUH8SgkzMYbqNb4RM7SfonCNBLpOQkkc6IhJrAEURUURKx3RqtvbDVCLKV1gdEBzxtWnYsrDv5Ejv20=
+   app: gcs01-vinicinolivera-travis
