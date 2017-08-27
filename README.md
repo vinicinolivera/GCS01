@@ -1,4 +1,4 @@
-[![Travis CI Build Status](https://travis-ci.org/vinicinolivera/GCS01.svg?branch=master)](https://travis-ci.org/vinicinolivera/GCS01) [![Circle CI Build Status](https://circleci.com/gh/mateusdemorais/GCS01.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/mateusdemorais/GCS01)
+[![Travis CI Build Status](https://travis-ci.org/vinicinolivera/GCS01.svg?branch=master)](https://travis-ci.org/vinicinolivera/GCS01) [![Circle CI Build Status](https://circleci.com/gh/vinicinolivera/GCS01.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/vinicinolivera/GCS01)
 
 # Django Basico
 
