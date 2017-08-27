@@ -1,4 +1,5 @@
 language: python
+sudo: false
 python:
 - '3.6'
 env:
@@ -11,6 +12,7 @@ before_script:
 - python3 manage.py migrate
 script:
 - python3 manage.py test
+dist: precise
 deploy:
   api_key:
     secure: 2M6xBinOCrlxvBhsHofTL+hU5y9sQI/JzJGeYch5oknUrTvUOG/HEgE3vLVLDyXgRc3bkX6EMMK0WX/3n1HwXwayk0yHW3yzqNcwsa1nolcOHqbVFwY4127ll1HdmwvOg/kjHNVMGXc9or2jM0SLPinYZILfZHKCE+CAm4Ot8Un23Sca+e91gVN3xUJjDhJklhLM32DhtBNlsnQpvxwDEbURH6aQQvqUD/4xZIH8fzu4BijM+IPM/IHhkzNoJENfxWXcrZ82XNTg71aYzVfOcTtLlyGyupa//8CWasFlKvewulZ2quBt4gvYBu8twp50xX3D+h1tcBpsOKs0wOKWOxKfwWtqHQ6Wi1W9DR86BCJjuRnzdCwgx6MENXg58kajGdiQ08upbxi13ANH75sAw5nWrRiHJ4tAWU/dopY96EeaD4McM6Z0zb9sgdAdZjMFy3U3YwaDKo9R8XQIdTTlcRy5GK74iOvKAlNftma53jCkVhI4dEg2SKBqMqXvHvPRj0sZAwb7+gvv2X0KGQIDWk9SOndjAt+Wi4Ukt9319WHwRCy4na0aXmv33SaxV7SsrbQIMGdv67eb+mZoJ8oqpQAP1UAb6m2AiFzZd1f6zXqCFRQYRYY7q+UxSEvOVAfeQxxnuhWe40Geqc6NDZQdwYgbI7oeZ5ymThqBoRKJ/x8=
