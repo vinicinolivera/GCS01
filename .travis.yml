@@ -6,12 +6,14 @@ env:
 install:
 - pip install -q Django==$DJANGO_VERSION
 - pip install -r requirements.txt
-before_script:
+script:
 - python3 manage.py makemigrations
 - python3 manage.py migrate
-script:
 - python3 manage.py test
+sudo: enabled
+dist: trusty
 deploy:
+  provider: heroku
   api_key:
     secure: n5LlcLPUGd3e6Mab1mGtei5g9a1s5nhcI/tVChjwmCMLMFqAC0CcTs6OPc+m/vH8AYMZHI6WYiCtVRaWMF8hJKFequ7YXdKeU7PBYWco4tS5suUFmVrwDG2PyfH8izVpbD1EWPbdPxRHHlx5Dqpq2TuAzebrH1HFmb4T+zJmyMcD7ZKjTsRWZ3yiTJicJNDIF3YxqIRuG7U0ZVWKJ3G7toUpXeMd2N30w6VxEaPu+7NOl2GHlk5X6k5SuHCLhMYe3/vzWSDVS33/oBJwHRWyK8E38q7vktruqJe8NiAQ8Cpu2v9EU0Ns7a2FYRrcLps/CVjqgqQ0EJLahfIUQuiiEvnpnBw1eNUKWqj46h5PORJpJhGDu10F5D422/TiLY8WnVj0NidEbz32Cpg0zjPOOJr9uzM3a2Mds4RrVMPGYRRNVOYnDGQ88/EEqMUhB1N0MI9cBo3Bn1Y5w+BkqGN4QhDfCiAaRJb+31sxZ6KGQqOvI6vxiJrkXGpv92dcuGSU89Gb0UWGVU8/Rt185QsEkLhNWlQ+D7hQ2gKPUHzcJo6/KGYPyzp0Cs184XrFm9PJ5OXkhNX+bySlLw4xfdPZlVzS0C4RXmWGCulIVmyJs/cuSMFfQss4MmFk8yUBWC4uy5OnTJzNbHqmTFoIxRmvKpQVErxWfIlItt+uqUK72Xs=
   app: gcs01-vinicinolivera-travis
