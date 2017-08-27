@@ -8,9 +8,7 @@ dependencies:
   post:
     - python3 manage.py makemigrations
     - python3 manage.py migrate
-test:
-  override:
-    - python3 manage.py test
+    
 deployment:
   staging:
     branch: master
